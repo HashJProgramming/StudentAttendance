@@ -38,6 +38,7 @@ function StudentList($conn){
                 <td class='text-center'><a class='btn btn-success' style='margin-left: 5px;' href='present.php?id=".$row['ID']."'><i class='fa fa-check' style='font-size: 15px;'></i><a class='btn btn-danger' href='absent.php?id=".$row['ID']."'><i class='fa fa-close' style='font-size: 15px;'></i></a></td>
                 <td class='text-center'>".$status."</td>
                 <td class='text-center'>".$date."</td>
+                <td class='text-center'>".date('Y-m-d h:i:s')."</td>
                 </tr>";
     }
 
